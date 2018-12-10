@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>CSforAll Project 1</title>
+    <style>
+      html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        width: 100vw;
+        height: 100%;
+      }
+
+      #map {
+        flex: 1;
+      }
+
+      #list {
+        min-width: 600px;
+        height: 100vh;
+      }
+
+      .table-cell {
+        font-size: 12px;
+      }
+
+      #map-container {
+        flex: 1;
+        height: 100vh;
+      }
+
+      .options {
+        padding: 8;
+      }
+
+      .google-visualization-table-td {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="map-container">
+        <div class="options">
+            <select id="year">
+              <option disabled selected>Year</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="all">All</option>
+            </select>
+            <select id="type">
+                <option disabled selected>Type</option>
+            </select>
+          </div>
+        <div id="map"></div>
+      </div>
+      <div id="list"></div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
