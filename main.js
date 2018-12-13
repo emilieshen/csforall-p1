@@ -160,7 +160,7 @@ function drawRegionsMap(data) {
   var options = {
     region: 'US',
     resolution: 'provinces',
-    colorAxis: {colors: ['#e6faff', '#1c599c']},
+    colorAxis: {colors: ['#e6f2ff', '#3061ac']},
   };
 
   var chart = new google.visualization.GeoChart(document.getElementById('map'));
